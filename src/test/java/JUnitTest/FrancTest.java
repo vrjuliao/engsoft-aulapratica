@@ -6,11 +6,11 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import main.Dollar;
+import main.Franc;
 
 
-public class DollarTest extends TestCase {
-    public DollarTest() {
+public class FrancTest extends TestCase {
+    public FrancTest() {
     }
 
     @BeforeAll
@@ -30,16 +30,9 @@ public class DollarTest extends TestCase {
     }
 
     @Test
-    public void testMultiplication() {
-        Dollar five = new Dollar(5);
-        assertEquals(new Dollar(10), five.times(2));
-        assertEquals(new Dollar(15), five.times(3));
-    }
-
-    @Test
-    public void testEquality() {
-        assertTrue(new Dollar(5).equals(new Dollar(5)));
-        assertFalse(new Dollar(5).equals(new Dollar(6)));
+    public void testFrancMultiplication() {
+        Franc five = new Franc(5);
+        assertEquals(new Franc(10), five.times(2));
+        assertEquals(new Franc(15), five.times(3));
     }
 }
-

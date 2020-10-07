@@ -1,7 +1,12 @@
 package main;
+import main.Money;
 
-public class Dollar {
-    public int amount = 10;
-    public Dollar(int amount) {}
-    public void times(int multiplier) {}
+public class Dollar extends Money {
+    public Dollar(int amount) {
+        this.amount= amount;
+    }
+
+    public Dollar times(int multiplier) {
+        return new Dollar(amount * multiplier);
+    }
 }
